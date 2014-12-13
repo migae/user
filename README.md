@@ -1,4 +1,4 @@
-user
+migae.user
 ====
 
 GAE User API
