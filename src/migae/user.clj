@@ -42,13 +42,31 @@
   (.createLogoutURL (get-user-service) destination))
 
 
+;; User api
+(defn compare-to [#^User user]
+  (.compareTo user))
+
+(defn equals [#^User user ^Object obj]
+  (.equals user obj))
+
+(defn get-auth-domain [#^User user]
+  (.getAuthDomain user))
+
 (defn get-email [#^User user]
   (.getEmail user))
 
+(defn get-federated-identity [#^User user]
+  (.getFederatedIdentity user))
 
 (defn get-nickname [#^User user]
   (.getNickname user))
 
+(defn get-id [#^User user]
+  (.getUserId user))
 
-(defn get-auth-domain [#^User user]
-  (.getAuthDomain user))
+(defn hash-code [#^User user]
+  (.hashCode user))
+
+(defn to-string [#^User user]
+  (.toString user))
+
